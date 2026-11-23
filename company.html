@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Company | SOLACE Intelligent Audio</title>
+<meta name="description" content="Two founders, one idea: technology that gives you back your quiet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Zalando+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230f0f0f'/%3E%3Cpath d='M12 4c.4 4 3.6 7.6 8 8-4.4.4-7.6 4-8 8-.4-4-3.6-7.6-8-8 4.4-.4 7.6-4 8-8z' fill='%23efeee9'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-inner">
+
+<header class="hdr hdr--light">
+  <div class="hdr__left">
+    <button class="hdr__menu label" aria-label="Open menu"><span class="lbl"><b>Menu<br>Close</b></span><span class="dots"><i></i><i></i><i></i><i></i></span></button>
+    <a class="hdr__shop label" href="over-ear.html"><span data-roll>Shop All</span></a>
+  </div>
+  <a class="hdr__logo" href="index.html" aria-label="SOLACE home">SOLACE</a>
+  <div class="hdr__right label">
+    <button class="acc-btn" data-open="account"><span data-roll>Account</span></button>
+    <button data-open="cart" class="roll-cart">Cart (0)</button>
+  </div>
+</header>
+<div class="nav-overlay"></div>
+<nav class="nav" aria-label="Main">
+  <div class="nav__inner">
+    <div class="nav__cards">
+      <a class="nav__card label" href="over-ear.html" style="--i:0"><span><span data-roll>Over-Ear</span></span><figure><img src="assets/img/menu-1.jpg" alt="Over-ear headphones"></figure></a>
+      <a class="nav__card label" href="in-ear.html" style="--i:1"><span><span data-roll>In-Ear</span></span><figure><img src="assets/img/menu-2.jpg" alt="Wireless earbuds"></figure></a>
+    </div>
+    <ul class="nav__links label"><li style="--i:2"><a href="index.html"><span data-roll>Home</span></a></li><li style="--i:3"><a href="technology.html"><span data-roll>Technology</span></a></li><li style="--i:4"><a href="company.html" class="is-active"><span data-roll>Company</span></a></li><li style="--i:5"><a href="hearing-profile.html"><span data-roll>Hearing Profile</span></a></li><li style="--i:6"><a href="retailer.html"><span data-roll>Find a Retailer</span></a></li><li style="--i:7"><a href="support.html"><span data-roll>Support Center</span></a></li></ul>
+  </div>
+  <div class="nav__mobile">
+    <button data-open="account">My Account <span><svg width="12" viewBox="0 0 12 10" aria-hidden="true"><path d="M0 5h10M6 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></span></button>
+    <a href="over-ear.html">Shop Over-Ear <span>( 6 )</span></a>
+    <a href="in-ear.html">Shop In-Ear <span>( 6 )</span></a>
+    <div class="sec label"><a href="index.html">Home</a><a href="technology.html">Technology</a><a href="company.html">Company</a><a href="hearing-profile.html">Hearing Profile</a><a href="retailer.html">Find a Retailer</a><a href="support.html">Support Center</a><a href="contact.html">Contact</a></div>
+  </div>
+</nav>
+<aside class="panel" id="cart" aria-label="Cart">
+  <div class="panel__top"><button class="panel__close label" data-close>Close <i><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1l8 8M9 1L1 9" stroke="currentColor" stroke-width="1.2"/></svg></i></button></div>
+  <div class="cart-empty"><h2 class="t-h3 it">Your cart is empty</h2><p class="t-xs">Browse the collection to find your sound</p><a class="btn btn--dark btn--block label" href="over-ear.html" style="width:calc(440 * var(--p));max-width:100%"><span data-roll>Explore headphones</span></a></div>
+  <div class="cart-list" hidden></div>
+  <div class="cart-foot" hidden><div class="row label"><span>Subtotal</span><span class="cart-total">$0</span></div><p class="t-xs" style="color:var(--muted)">Shipping and taxes calculated at checkout. Free 60-day trial.</p><button class="btn btn--dark btn--block label checkout"><span data-roll>Checkout</span></button></div>
+</aside>
+<aside class="panel panel--account" id="account" aria-label="Account">
+  <div class="panel__top"><button class="panel__close label" data-close>Close <i><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1l8 8M9 1L1 9" stroke="currentColor" stroke-width="1.2"/></svg></i></button></div>
+  <form class="acc" id="acc-form" novalidate>
+    <h2 class="t-h3 it">Sign in or create an account</h2>
+    <p class="t-xs">Enter your email and password to sign in or create an account.</p>
+    <input class="field" type="email" placeholder="Email*" aria-label="Email" autocomplete="email">
+    <p class="err-msg"></p>
+    <p class="t-xs" style="color:var(--muted);font-size:calc(11 * var(--p))">By continuing, you agree to our <a href="privacy-policy.html" style="text-decoration:underline">Privacy Policy</a> and <a href="terms.html" style="text-decoration:underline">Terms of Service</a>.</p>
+    <button class="btn btn--dark btn--block label" type="submit" style="margin-top:calc(40 * var(--p))"><span data-roll>Continue</span></button>
+    <p class="t-xs" style="margin-top:calc(40 * var(--p))">Or connect with:</p>
+    <button type="button" class="btn-apple t-xs">Sign in with a passkey <span><svg width="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-12-12C6.2 11.4 11.4 6.2 12 0z" fill="currentColor"/></svg></span></button>
+  </form>
+</aside>
+<div class="cookie">
+  <p>We use cookies and similar technologies for essential site functions and analytics. <a href="cookies.html">Manage your preferences</a> anytime.</p>
+  <p>You may opt out of the sharing of your personal information at any time from the <a href="privacy-policy.html">Privacy Policy</a> page.</p>
+  <div class="cookie__btns label"><button class="accept" data-c="accept">Accept</button><button class="decline" data-c="decline">Decline</button></div>
+</div>
+<main class="page">
+<div class="company"><section class="mosaic"><figure><img src="assets/img/tile-1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-3.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-4.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-5.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-6.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-7.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-8.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-4.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-3.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-5.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-8.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-7.jpg" alt="" loading="lazy"></figure><figure><img src="assets/img/tile-6.jpg" alt="" loading="lazy"></figure><h1 class="mosaic__title">Two Ears. One Silence.</h1></section>
+<p class="bio t-body"><b>Ines Calloway</b> spent a decade designing audio products for studios and concert halls before leading hardware at a wearable start-up. She founded SOLACE to build intelligence that restores attention, distilling her hard-won knowledge of acoustics, hardware and AI into an object you want to wear.</p>
+<p class="bio t-body"><b>Theo Marchetti</b> is an entrepreneur and creative director. He helped shape category-defining brands in mobility and home audio, with a focus on making advanced technology desirable and culturally relevant. At SOLACE he leads brand, creative direction and industrial design.</p>
+<figure class="company__img"><img data-par src="assets/img/wide-6.jpg" alt="" loading="lazy"></figure><div style="height:calc(120 * var(--p))"></div></div>
+</main>
+<footer class="ftr label" data-dark>
+  <div class="ftr__top">
+    <div class="ftr__news"><p>Get updates, announcements<br>and early access from Solace</p>
+      <form class="ftr__form" novalidate><input type="email" placeholder="Email address" aria-label="Email address"><button type="submit" class="label"><span data-roll>Join</span></button></form>
+      <p class="ftr__msg"></p></div>
+    <div class="ftr__pay"><span>HSA/FSA</span><span>VISA</span><span>Pay</span><span>G Pay</span><span style="font-weight:500;text-transform:lowercase">mastercard</span><span>AMEX</span></div>
+  </div>
+  <span class="ftr__spark"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M10 4c.4 4 3 6.6 7 7-4 .4-6.6 3-7 7-.4-4-3-6.6-7-7 4-.4 6.6-3 7-7zM22 15c.3 2.6 2 4.3 4.6 4.6-2.6.3-4.3 2-4.6 4.6-.3-2.6-2-4.3-4.6-4.6 2.6-.3 4.3-2 4.6-4.6zM22 2c.2 1.7 1.3 2.8 3 3-1.7.2-2.8 1.3-3 3-.2-1.7-1.3-2.8-3-3 1.7-.2 2.8-1.3 3-3z" fill="currentColor"/></svg></span>
+  <div class="ftr__word" aria-hidden="true"><svg viewBox="0 0 1050 200"><text x="-1.5" y="186.5" font-size="262" textLength="1050" lengthAdjust="spacingAndGlyphs" style="fill:rgba(255,255,255,.07)">SOLACE</text><text x="2.5" y="190.5" font-size="262" textLength="1050" lengthAdjust="spacingAndGlyphs" style="fill:#000">SOLACE</text><text x="0" y="188" font-size="262" textLength="1050" lengthAdjust="spacingAndGlyphs">SOLACE</text></svg></div>
+  <div class="ftr__bot">
+    <div>
+      <div class="ftr__cols">
+        <div><h4>Product</h4><a href="over-ear.html">Collection</a><a href="technology.html">Technology</a><a href="hearing-profile.html">Hearing Profile</a><a href="retailer.html">Find a Retailer</a></div>
+        <div><h4>Company</h4><a href="company.html">About Solace</a><a href="contact.html">Contact</a></div>
+        <div><h4>Support</h4><a href="support.html">Support Center</a><a href="orders-shipping.html">Shipping &amp; Returns</a><a href="orders-shipping.html#warranty-policy">Warranty</a></div>
+        <div><h4>Legal</h4><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="cookies.html">Cookies</a><a href="accessibility.html">Accessibility</a></div>
+      </div>
+      <p class="ftr__mail">Support: <a href="mailto:hello@solace.audio">hello@solace.audio</a></p>
+    </div>
+    <div class="ftr__right">
+      <div class="ftr__soc"><a href="#" aria-label="ig"><svg viewBox="0 0 16 16"><path d="M4.5 1h7A3.5 3.5 0 0115 4.5v7a3.5 3.5 0 01-3.5 3.5h-7A3.5 3.5 0 011 11.5v-7A3.5 3.5 0 014.5 1zm0 1.3A2.2 2.2 0 002.3 4.5v7a2.2 2.2 0 002.2 2.2h7a2.2 2.2 0 002.2-2.2v-7a2.2 2.2 0 00-2.2-2.2zM8 4.6A3.4 3.4 0 118 11.4 3.4 3.4 0 018 4.6zm0 1.3a2.1 2.1 0 100 4.2 2.1 2.1 0 000-4.2zm3.7-2.3a.8.8 0 110 1.6.8.8 0 010-1.6z"/></svg></a><a href="#" aria-label="x"><svg viewBox="0 0 16 16"><path d="M1.5 1.5h4l3 4.2 3.6-4.2h1.6L9.2 6.5l5.3 8h-4l-3.3-4.6-4 4.6H1.6l4.8-5.4z"/></svg></a><a href="#" aria-label="yt"><svg viewBox="0 0 16 16"><path d="M15 4.5c-.2-1-1-1.7-2-1.8C11.4 2.5 9.7 2.5 8 2.5s-3.4 0-5 .2c-1 .1-1.8.8-2 1.8C.8 5.6.8 6.8.8 8s0 2.4.2 3.5c.2 1 1 1.7 2 1.8 1.6.2 3.3.2 5 .2s3.4 0 5-.2c1-.1 1.8-.8 2-1.8.2-1.1.2-2.3.2-3.5s0-2.4-.2-3.5zM6.5 10.5v-5L10.8 8z"/></svg></a><a href="#" aria-label="li"><svg viewBox="0 0 16 16"><path d="M1 1h14v14H1zm2.3 4.8V13h2.2V5.8zm1.1-3.3a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM7 5.8V13h2.2V9.4c0-1 .3-1.8 1.4-1.8s1.2 1 1.2 1.8V13H14V9c0-2-.6-3.4-2.7-3.4-1 0-1.8.5-2.1 1.1V5.8z"/></svg></a><a href="#" aria-label="tt"><svg viewBox="0 0 16 16"><path d="M11 1c.3 1.8 1.4 3 3.2 3.2v2.3c-1.2 0-2.3-.4-3.2-1v5.2A4.6 4.6 0 116.4 6.1v2.4a2.3 2.3 0 102.3 2.3V1z"/></svg></a><a href="#" aria-label="pin"><svg viewBox="0 0 16 16"><path d="M8 .8a7.2 7.2 0 00-2.6 13.9c-.1-.6-.1-1.5 0-2.1l.9-3.7s-.2-.5-.2-1.1c0-1 .6-1.8 1.4-1.8.6 0 .9.5.9 1 0 .7-.4 1.6-.6 2.5-.2.8.4 1.4 1.1 1.4 1.4 0 2.4-1.8 2.4-3.9 0-1.6-1.1-2.8-3-2.8a3.5 3.5 0 00-3.6 3.5c0 .7.2 1.2.5 1.5l.1.4-.2.7c0 .2-.2.3-.4.2-1-.4-1.4-1.5-1.4-2.7 0-2 1.7-4.4 5-4.4 2.7 0 4.5 2 4.5 4.1 0 2.8-1.5 4.8-3.8 4.8-.8 0-1.5-.4-1.7-.9l-.5 1.8c-.2.6-.5 1.2-.8 1.7A7.2 7.2 0 108 .8z"/></svg></a><a href="#" aria-label="fb"><svg viewBox="0 0 16 16"><path d="M8 .8a7.2 7.2 0 00-1.1 14.3V10H5V8h1.9V6.4c0-1.8 1.1-2.8 2.7-2.8l1.6.1v1.8h-.9c-.9 0-1.2.6-1.2 1.1V8h2l-.3 2H9.1v5.1A7.2 7.2 0 008 .8z"/></svg></a></div>
+      <p class="ftr__copy">©2026 Solace</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
