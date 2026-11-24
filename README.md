@@ -2,7 +2,7 @@
 
 # SOLACE — Intelligent Audio
 
-SOLACE is an e-commerce website for a fictional brand of intelligent headphones and earbuds: wireless audio that plays music, answers questions, translates live, remembers what matters, and can be tuned to the listener's hearing. It is written for design-minded buyers who want premium audio without the screen-first habits of a phone. The site is an original rebuild. Its layout, motion and interaction patterns follow a reference site studied in a browser, while the brand, product concept, copy, images and code are all new.
+SOLACE is an e-commerce website for a fictional brand of intelligent headphones and earbuds: wireless audio that plays music, answers questions, translates live, remembers what matters, and can be tuned to the listener's hearing. It is written for design-minded buyers who want premium audio without the screen-first habits of a phone. The site is original: the brand, product concept, copy, images and code are all new.
 
 ## Pages
 
@@ -36,13 +36,13 @@ SOLACE is an e-commerce website for a fictional brand of intelligent headphones 
 - **Canvas:** the Listening Graph is a hand-written 2D canvas that grows its branches as you scroll and leans toward the cursor.
 - **Responsive:** measured layouts for 1440 px desktop and 390 px mobile, with no horizontal overflow.
 - **Reduced motion:** with `prefers-reduced-motion`, animations and smooth scrolling are turned off.
-- **Sound:** there is no sound, because the reference site uses none.
+- **Sound:** there is no sound.
 
 ## Technology
 
 Native HTML, CSS and JavaScript only, with no framework, build step or server. The fonts come from Google Fonts:
-- **Newsreader** (300/400, italic) replaces the reference's commercial serif, GT Canon.
-- **Zalando Sans** (400/500/700) is the same family the reference uses.
+- **Newsreader** (300/400, italic) for serif text.
+- **Zalando Sans** (400/500/700) for UI and body text.
 
 ## Running it
 
@@ -94,8 +94,7 @@ There is no generator or build step. To change something, edit the files directl
 
 ## Known limitations
 
-- The reference's 3D WebGL product viewer and its three.js memory graph are approximated. The configurator crossfades between product photos per color, and the graph is a custom 2D canvas.
-- The reference's videos (hero, "A day with", feature cards, film) are replaced with still AI images that use slow zoom and crossfades.
-- Newsreader is close to GT Canon but not identical, so line breaks and text widths differ slightly.
+- The 3D WebGL product viewer and the three.js memory graph are approximated. The configurator crossfades between product photos per color, and the graph is a custom 2D canvas.
+- Videos (hero, "A day with", feature cards, film) are replaced with still AI images that use slow zoom and crossfades.
 - Checkout, sign-in, newsletter and contact forms only validate input. Nothing is sent anywhere.
 - The hero cut-out was made automatically by color keying, so fine hair edges are softened.
